@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../SecureForms.WinForms/Models/*.cs" Link="Models/%(Filename)%(Extension)" />
+    <Compile Include="../SecureForms.WinForms/Controllers/*.cs" Link="Controllers/%(Filename)%(Extension)" />
+    <Compile Include="../SecureForms.WinForms/Security/*.cs" Link="Security/%(Filename)%(Extension)" />
+    <Compile Include="../SecureForms.WinForms/Data/*.cs" Link="Data/%(Filename)%(Extension)" />
+    <EmbeddedResource Include="../Database/schema.sql" Link="Database/schema.sql" />
+    <PackageReference Include="MySqlConnector" Version="2.6.2" />
+  </ItemGroup>
+</Project>

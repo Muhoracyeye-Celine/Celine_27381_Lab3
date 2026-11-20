@@ -1,0 +1,14 @@
+.vs/
+.vscode/
+**/bin/
+**/obj/
+*.user
+*.suo
+*.pfx
+.env
+.env.*
+database.json
+appsettings.local.json
+*.sql.gz
+*.bak
+TestResults/
